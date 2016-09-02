@@ -1,0 +1,73 @@
+.multipleInput-container {
+    float: right;
+    padding: 1px;
+    padding-bottom: 0;
+    cursor: text;
+    height: 27px;
+    width: 97%;
+}
+ 
+.multipleInput-container input,.multipleInput-container input:focus  {
+     width: 180px;
+     font-size:13px;
+     clear:both;
+     height:22px;
+     border:0;
+     margin:1px 0 0 0;
+     outline: none !important;
+}
+ 
+.multipleInput-container ul {
+     list-style-type:none;
+     margin:0px;
+     padding: 0px;
+}
+ 
+li.multipleInput-email {
+     float:left;
+     margin-right:2px;
+     margin-bottom:1px;
+     border:1px #BBD8FB solid;
+     padding:2px;
+     background:#F3F7FD;
+}
+ 
+.multipleInput-close {
+     width:16px;
+     height:16px;
+     background:url(close.png);
+     display:block;
+     float:right;
+     margin:0 3px;
+}
+
+.multipleInput-close:hover {
+      width:16px;
+     height:16px;
+     background:url(close-focus.png);
+     display:block;
+     float:right;
+     margin:0 3px;
+}
+
+.email-section-input {
+     margin:10% 20% 0 10%; 
+     background:white; 
+     height: 30px; 
+     border-bottom: 1px #ccc solid; 
+     padding: 5px 0px 0px 15px;
+}
+
+.email-template-scratch-icon {
+     height: 64px;
+     width: 64px;
+     background: url(template-email-scratch.png);
+     float: right;
+     position: relative;
+     top: -50px;
+     right: 180px;
+}
+
+.float-left {
+     float: left;
+}
