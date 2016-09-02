@@ -1,3 +1,7 @@
+.body-container {
+     background-color: #ededed!important;
+}
+
 .multipleInput-container {
     float: right;
     padding: 1px;
@@ -48,6 +52,11 @@ li.multipleInput-email {
      display:block;
      float:right;
      margin:0 3px;
+}
+
+.email-section-to {
+     padding-right:3px; 
+     float:left;
 }
 
 .email-section-input {
