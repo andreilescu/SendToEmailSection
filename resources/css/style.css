@@ -1,0 +1,307 @@
+/* Default */
+.body-container {
+     background-color: #ededed!important;
+}
+
+.email {
+	width:100%; 
+	float: left; 
+	margin: 10% 0 10% 0;
+}
+
+.email-section {
+	padding: 2% 5% 3% 15%;
+}
+
+.email-section-to {
+     padding-right:3px; 
+     float:left;
+}
+
+
+/* Scrach */
+.email-section-input {
+     background:white; 
+     height: 30px; 
+     border-bottom: 1px #ccc solid; 
+     padding: 5px 0px 0px 15px;     
+     margin-top: 1%;
+     width: 70%;
+     float: left;
+	 overflow: hidden;
+}
+
+.multipleInput-container {
+    float: right;
+    padding: 1px;
+    padding-bottom: 0;
+    cursor: text;
+    height: 27px;
+    width: 97%;
+}
+ 
+.multipleInput-container input,.multipleInput-container input:focus  {
+     width: 180px;
+     font-size:13px;
+     clear:both;
+     height:22px;
+     border:0;
+     margin:1px 0 0 0;
+     outline: none !important;
+}
+ 
+.multipleInput-container ul {
+     list-style-type:none;
+     margin:0px;
+     padding: 0px;
+}
+ 
+li.multipleInput-email {
+     float:left;
+     margin-right:2px;
+     margin-bottom:1px;
+     border:1px #BBD8FB solid;
+     padding:2px;
+     background:#F3F7FD;
+}
+ 
+.multipleInput-close {
+     width:16px;
+     height:16px;
+     background:url(../images/close.png);
+     display:block;
+     float:right;
+     margin:0 3px;
+}
+
+.multipleInput-close:hover {
+     width:16px;
+     height:16px;
+     background:url(../images/close-focus.png);
+     display:block;
+     float:right;
+     margin:0 3px;
+}
+
+/* Outlook */
+.multipleInput-container-outlook {
+    float: right;
+    padding: 1px;
+    padding-bottom: 0;
+    cursor: text;
+    height: 27px;
+    width: 97%;
+}
+ 
+.multipleInput-container-outlook input,.multipleInput-container-outlook input:focus  {
+     width: 180px;
+     font-size:13px;
+     clear:both;
+     height:22px;
+     border:0;
+     margin:1px 0 0 0;
+     outline: none !important;
+}
+ 
+.multipleInput-container-outlook ul {
+     list-style-type:none;
+     margin:0px;
+     padding: 0px;
+}
+ 
+li.multipleInput-email-outlook {
+     margin: 0 13px 0 10px;
+     float:left;
+     background:#F4F4F4 !important;
+}
+
+li.multipleInput-email-outlook:hover {
+     background:#D3D3D3 !important;
+}
+
+.multipleInput-close-outlook {
+    width: 16px;
+    height: 16px;
+    margin: 2px 3px;
+    background: url(../images/close_outlook.png);
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.multipleInput-cicle-outlook {
+	height: 22px;
+    width: 22px;
+    font-size: 12px;
+    line-height: 22px;
+    border-radius: 50%;
+    background-color: rgb(107, 165, 231);
+    float: left;
+    position: relative;
+    left: -11px;
+}
+.multipleInput-cicle-outlook-letter {
+	width:100%; 
+	color: white; 
+	text-align: center;
+}
+
+.multipleInput-cicle-outlook.gray {
+	height: 22px;
+    width: 22px;
+    font-size: 12px;
+    line-height: 22px;
+    border-radius: 50%;
+    background-color: #F4F4F4 !important;
+    float:right !important;
+    position: relative;
+    left: 11px !important;
+}
+
+.multipleInput-cicle-outlook.gray:hover {
+    background-color: #A8A8A8 !important;
+}
+
+/* Gmail */
+li.multipleInput-email-gmail {
+	float: left;
+    margin-right: 2px;
+    margin-bottom: 1px;
+    border: 1px #BBD8FB solid;
+    padding: 2px 2px 2px 7px;
+    border-radius: 5%;
+    background: #F5F5F5 !important;
+}
+
+li.multipleInput-email-gmail:hover {
+    border: 1px solid #A8A8A8;
+    background: #F5F5F5 !important;
+}
+
+.multipleInput-close-gmail {
+	 width:18px;
+     height:18px;
+     background:url(../images/close_gmail.png);
+     display:block;
+     float:right;
+     margin:0 3px;
+}
+
+/* Yahoo */
+li.multipleInput-email-yahoo {
+	float: left;
+    margin-right: 2px;
+    margin-bottom: 1px;
+    padding: 2px 2px 2px 7px;
+    background: white !important;
+}
+
+li.multipleInput-email-yahoo:hover {
+	border-radius: 5%;
+    background: #198fff !important;
+}	
+
+li.multipleInput-email-royalcopenhagen {
+	float: left;
+    margin: 0 2px 1px 0;
+    padding: 2px 2px 2px 7px;
+	border: 1px solid #B59759;
+	color: #343434;
+    background: white !important;
+}
+
+li.multipleInput-email-royalcopenhagen:hover {
+	color: #fff;
+    background: #B59759 !important;
+}
+
+/* Yahoo #fff */
+
+
+.multipleInput-close-yahoo {
+	 width:18px;
+     height:18px;
+     background:url(../images/close_gmail.png);
+     display:block;
+     float:right;
+     margin:0 3px;
+}
+	
+.multipleInput-close-yahoo:hover {
+	 width:18px;
+     height:18px;
+     background:url(../images/close_gmail.png);
+     display:block;
+     float:right;
+     margin:0 3px;
+}
+
+.multipleInput-close-royalcopenhagen {
+	 width:16px;
+     height:16px;
+     background-image:url(../images/close_royalcopenhagen_black.png);
+     background-repeat:no-repeat;
+     display:block;
+     float:right;
+     margin:0 1px 0 6px;
+}
+
+.multipleInput-close-royalcopenhagen:hover {
+	 width:16px;
+     height:16px;
+     background-image:url(../images/close_royalcopenhagen_white.png);
+     display:block;
+     float:right;
+     margin:0 1px 0 6px;
+}
+
+/* Icons */
+.email-scratch-icon {
+     height: 64px;
+     width: 64px;
+     background: url(../images/icon-scratch.png);
+     float: left;
+     margin: 0 0 0 2%;
+}
+
+.email-outlook-icon {
+	  height: 64px;
+     width: 64px;
+     background: url(../images/icon-outlook.png);
+     float: left;
+     margin: 0 0 0 2%;
+}
+
+.email-gmail-icon {
+	 height: 64px;
+     width: 64px;
+     background: url(../images/icon-gmail.png);
+     float: left;
+     margin: 0 0 0 2%;
+}
+
+.email-yahoo-icon {
+     height: 64px;
+     width: 64px;
+     background: url(../images/icon-yahoo.png);
+     float: left;
+     margin: 0 0 0 2%;
+}
+
+.email-royalcopenhage-icon {
+	height: 64px;
+    width: 64px;
+    background-color: #b59759;
+	float: left;
+	margin: 0 0 0 2%;
+}
+
+.email-royalcopenhagen-label {
+	color: white;
+    margin: 15px 10px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.float-left {
+     float: left;
+}

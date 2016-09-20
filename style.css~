@@ -2,6 +2,31 @@
      background-color: #ededed!important;
 }
 
+.email {
+	width:100%; 
+	float: left; 
+	margin: 10% 0 10% 0;
+}
+
+.email-section {
+	padding: 2% 5% 3% 15%;
+}
+
+.email-section-to {
+     padding-right:3px; 
+     float:left;
+}
+
+.email-section-input {
+     background:white; 
+     height: 30px; 
+     border-bottom: 1px #ccc solid; 
+     padding: 5px 0px 0px 15px;     
+     margin-top: 1%;
+     width: 70%;
+     float: left;
+}
+
 .multipleInput-container {
     float: right;
     padding: 1px;
@@ -46,7 +71,7 @@ li.multipleInput-email {
 }
 
 .multipleInput-close:hover {
-      width:16px;
+     width:16px;
      height:16px;
      background:url(close-focus.png);
      display:block;
@@ -54,27 +79,28 @@ li.multipleInput-email {
      margin:0 3px;
 }
 
-.email-section-to {
-     padding-right:3px; 
-     float:left;
-}
-
-.email-section-input {
-     margin:10% 20% 0 10%; 
-     background:white; 
-     height: 30px; 
-     border-bottom: 1px #ccc solid; 
-     padding: 5px 0px 0px 15px;
-}
-
-.email-template-scratch-icon {
+.email-scratch-icon {
      height: 64px;
      width: 64px;
-     background: url(template-email-scratch.png);
-     float: right;
-     position: relative;
-     top: -50px;
-     right: 180px;
+     background: url(icon-scratch.png);
+     float: left;
+     margin: 0 0 0 2%;
+}
+
+.email-yahoo-icon {
+     height: 64px;
+     width: 64px;
+     background: url(icon-yahoo.png);
+     float: left;
+     margin: 0 0 0 2%;
+}
+
+.email-outlook-icon {
+	  height: 64px;
+     width: 64px;
+     background: url(icon-outlook.png);
+     float: left;
+     margin: 0 0 0 2%;
 }
 
 .float-left {
