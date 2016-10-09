@@ -18,6 +18,10 @@
      float:left;
 }
 
+.errorClass {
+    background-color: red !important;
+    color: white !important;
+}
 
 /* Scrach */
 .email-section-input {
@@ -112,7 +116,7 @@ li.multipleInput-email {
 li.multipleInput-email-outlook {
      margin: 0 13px 0 10px;
      float:left;
-     background:#F4F4F4 !important;
+     background:#F4F4F4;
 }
 
 li.multipleInput-email-outlook:hover {
@@ -169,7 +173,7 @@ li.multipleInput-email-gmail {
     border: 1px #BBD8FB solid;
     padding: 2px 2px 2px 7px;
     border-radius: 5%;
-    background: #F5F5F5 !important;
+    background: #F5F5F5;
 }
 
 li.multipleInput-email-gmail:hover {
@@ -192,11 +196,11 @@ li.multipleInput-email-yahoo {
     margin-right: 2px;
     margin-bottom: 1px;
     padding: 2px 2px 2px 7px;
-    background: white !important;
+    border-radius: 5%;
+    background: white;
 }
 
 li.multipleInput-email-yahoo:hover {
-	border-radius: 5%;
     background: #198fff !important;
 }	
 
@@ -206,16 +210,13 @@ li.multipleInput-email-royalcopenhagen {
     padding: 2px 2px 2px 7px;
 	border: 1px solid #B59759;
 	color: #343434;
-    background: white !important;
+    background: white;
 }
 
 li.multipleInput-email-royalcopenhagen:hover {
 	color: #fff;
     background: #B59759 !important;
 }
-
-/* Yahoo #fff */
-
 
 .multipleInput-close-yahoo {
 	 width:18px;

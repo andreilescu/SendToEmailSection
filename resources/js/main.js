@@ -14,17 +14,25 @@
                         
                          // remove space/comma from value
                          var val = $(this).val().slice(0, -1); 
-                         
-                         if($.trim(val).length > 0) {
+                         var email = $.trim(val);
+
+                         if(email.length > 0) {
+
+                            // validate an email
+                            var checkValidEmail = validateEmail(email);
+                            var errorClass = toggleErrorClass(checkValidEmail);
+
 							// append to list of emails with remove button
-							$list.append($('<li class="multipleInput-email"><span>' + val + '</span></li>')
-								.append($('<a href="#" class="multipleInput-close" title="Remove" />')
-									.click(function(e) {
-										$(this).parent().remove();
-										e.preventDefault();
-									})
+							$list.append($('<li class="multipleInput-email' + errorClass + '"><span>' + email + '</span></li>')
+								 .append($('<a href="#" class="multipleInput-close" title="Remove" />')
+								 .click(function(e) {
+										    $(this).parent().remove();
+										    e.preventDefault();
+								        })
 								)
 							);
+                           
+
 							$(this).attr('placeholder', '');
 							// empty input
 							$(this).val('');
@@ -75,13 +83,17 @@
                         
                          // remove space/comma from value
                          var val = $(this).val().slice(0, -1); 
-                         
-                         if($.trim(val).length > 0) {
+                         var email = $.trim(val);
+
+                         if(email.length > 0) {
 							// first letter of the name 
-							var firstLetter = val[0].toUpperCase();
+							var firstLetter = email[0].toUpperCase();
+                             // validate an email
+                            var checkValidEmail = validateEmail(email);
+                            var errorClass = toggleErrorClass(checkValidEmail);
 							
 							// append to list of emails with remove button
-							$list.append($('<li class="multipleInput-email-outlook"><div class="multipleInput-cicle-outlook"><div class="multipleInput-cicle-outlook-letter">' + firstLetter +'</div></div> <span>' +val+ '</span></li>')
+							$list.append($('<li class="multipleInput-email-outlook'+ errorClass +'"><div class="multipleInput-cicle-outlook"><div class="multipleInput-cicle-outlook-letter">' + firstLetter +'</div></div> <span>' +email+ '</span></li>')
 								 .append($('<div class="multipleInput-cicle-outlook gray"><a href="#" class="multipleInput-close-outlook" title="Remove" /></div>')
 									.click(function(e) {
 										$(this).parent().remove();
@@ -140,10 +152,15 @@
                         
                          // remove space/comma from value
                          var val = $(this).val().slice(0, -1); 
-                         
-                         if($.trim(val).length > 0) {
+                         var email = $.trim(val);
+
+                         if(email.length > 0) {
+                            // validate an email
+                            var checkValidEmail = validateEmail(email);
+                            var errorClass = toggleErrorClass(checkValidEmail); 
+
 							// append to list of emails with remove button
-							$list.append($('<li class="multipleInput-email-gmail"><span>' + val + '</span></li>')
+							$list.append($('<li class="multipleInput-email-gmail'+ errorClass +'"><span>' + email + '</span></li>')
 								.append($('<a href="#" class="multipleInput-close-gmail" title="Remove" />')
 									.click(function(e) {
 										$(this).parent().remove();
@@ -201,10 +218,15 @@
                         
                          // remove space/comma from value
                          var val = $(this).val().slice(0, -1); 
-                         
-                         if($.trim(val).length > 0) {
+                         var email = $.trim(val);
+
+                         if(email.length > 0) {
+                            // validate an email
+                            var checkValidEmail = validateEmail(email);
+                            var errorClass = toggleErrorClass(checkValidEmail); 
+
 							// append to list of emails with remove button
-							$list.append($('<li class="multipleInput-email-yahoo"><span>' + val + '</span></li>')
+							$list.append($('<li class="multipleInput-email-yahoo' + errorClass +'"><span>' + email + '</span></li>')
 								.append($('<a href="#" class="multipleInput-close-yahoo" title="Remove" />')
 									.click(function(e) {
 										$(this).parent().remove();
@@ -262,10 +284,15 @@
                         
                          // remove space/comma from value
                          var val = $(this).val().slice(0, -1); 
-                         
-                         if($.trim(val).length > 0) {
-							// append to list of emails with remove button
-							$list.append($('<li class="multipleInput-email-royalcopenhagen"><span>' + val + '</span></li>')
+                         var email = $.trim(val);
+
+                         if(email.length > 0) {
+                            // validate an email
+                            var checkValidEmail = validateEmail(email);
+                            var errorClass = toggleErrorClass(checkValidEmail); 
+							
+                            // append to list of emails with remove button
+							$list.append($('<li class="multipleInput-email-royalcopenhagen '+ errorClass +'"><span>' + email + '</span></li>')
 								.append($('<a href="#" class="multipleInput-close-royalcopenhagen" title="Remove" />')
 									.click(function(e) {
 										$(this).parent().remove();
@@ -308,6 +335,19 @@
                return $(this).hide();
           });
      };  
+
+	function validateEmail($email) {
+  		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+  	    return emailReg.test( $email );
+	}
+
+    function toggleErrorClass(checkValidEmail) {
+        var errorClass = ""; 
+        if(!checkValidEmail) {
+            errorClass = " errorClass";
+        }
+        return errorClass;
+    }
            
 })( jQuery );
 

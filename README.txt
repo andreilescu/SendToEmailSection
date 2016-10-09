@@ -7,3 +7,6 @@ Templates include following examples:
 	- outlook
 	- custom email section
 
+TODO: 
+	- Implement generic way of deleting email, when user press backspace
+
